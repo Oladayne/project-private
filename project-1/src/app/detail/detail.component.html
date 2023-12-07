@@ -1,0 +1,39 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<div *ngFor="let detail of listDetail">
+	<div class="contai" style="background: rgb(80,80,80);
+	background: linear-gradient(326deg, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 55%, rgba(45,45,45,1) 100%); padding-top:8rem ;">
+		<div class="cardd container" style="background-color:#60606061; backdrop-filter: blur(5px); border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6); margin-bottom: 2rem;">
+			<div class="container-fliud" >
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="{{detail.image}}" /></div>
+						</div>						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">{{detail.productName}}</h3>
+						<div class="rating">
+							<div class="stars">
+							<span >{{detail.vote}}</span>
+							<span class="review-no">41 reviews</span>
+						</div>
+						<h3 class="product-title"><a href="/images/myw3schoolsimage.jpg" download>
+							<img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+						  </a></h3>
+						<p class="product-description">{{detail.content}}</p>
+						<h4 class="price" style="font-size: 15px;">current price: <span style="font-size: 25px;">${{detail.price}}</span></h4>
+						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+						<div class="action">
+							<button class="add-to-cart btn btn-default" (click)="onAddToCart(detail)" >Add To Cart</button>
+							<button class="add-to-cart btn btn-default" [routerLink]="['/compare']">View Compare
+							  </button>
+							  <button *ngFor="let product of listProduct" class="add-to-cart btn btn-default" (click)="onCompare(product)" >Add To Compare</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>

@@ -1,0 +1,112 @@
+<div class="section section-dark section-nucleo-icons" style="background: rgb(80,80,80);
+background: linear-gradient(326deg, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 55%, rgba(45,45,45,1) 100%);padding-top:12rem;">
+  <div class="container" style=" background-color:#60606061; backdrop-filter: blur(5px); border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6); background-image:url(https://i.pinimg.com/564x/17/3f/e6/173fe648dd25a78e8708d496ea7fb764.jpg); background-repeat:no-repeat;background-size: 100%;background-position: 0% 58%; ">
+      <div class="row" style="padding-top: 12rem;">
+          <div class="ct takol-md-8 ml-auto mr-auto text-center">
+              
+              <p class="description">Whoever said money can’t buy happiness didn’t know where to go shopping</p>
+          </div>
+      </div>
+  
+      <div class="row" style="padding-bottom: 2rem;">
+          <div class="col-xs-8 col-sm-12 col-md-3">
+            <a href="https://www.chanel.com/vn/" target="_blank"> <img src="https://i.pinimg.com/564x/2f/8e/09/2f8e095c40cb7827e83b798c4f87b78e.jpg" width="255px" height="143.31px" class="img-rounded img-responsive" alt="Gucci"></a>   
+              <div class="row" style="padding-top: 12px;">
+                <div class="col-xs-8 col-sm-12 col-md-6 btn-fl" style="display: block;">
+                  <div class=" text-center" routerLinkActive="active">
+                    <a class="btn btn-outline-neutral btn-round nav-link" style="padding:3px 10px;" rel="tooltip" >Flow</a>
+                  </div>
+                </div>    
+                <div class="col-xs-8 col-sm-12 col-md-6 btn-ct" style="display: block; ">
+                  <div class=" text-center" routerLinkActive="active">
+                    <a class="btn btn-outline-neutral btn-round nav-link" style="padding:3px 10px;" rel="tooltip" >Chat</a>
+                  </div>
+                </div>    
+              </div>         
+              
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-3">
+              <h4 class="images-title"> 
+                <p>Product: 10</p>
+                <p>Watching: 1</p>
+                <p>Response rate:73%(in a few hours)</p>
+                
+              </h4>            
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-3">
+              <h4 class="images-title"> 
+                <p>Order cancellation: 1,5%</p>
+                <p>Flowers: 84,7k</p>
+                <p>Evaluate: 5/5 (95,3k evaluate)</p> 
+               </h4>               
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-3">
+              <h4 class="images-title"> 
+                <p>Joined: 21 months ago</p>
+                <p>Founder: CoCo Chanel</p>
+                <p>Since: 1910</p>
+             </h4> 
+          </div>    
+          
+      </div>
+  </div>
+  <div class="container" style="background-color:#2b2b2b81;">
+    <div class="tim-title">
+      <h3 style="background-color:#2b2b2b81;text-align: center;">CHANEL</h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-md-3" *ngFor="let chanl of listChanel">
+        <div class="containe a img-rounded img-responsive"style="background-image: url({{chanl.image}})">
+          <div class="overlay">
+            <div class="items"></div>
+            <div class="items head">
+              <p>{{chanl.productName}}</p>
+              <hr>
+            </div>
+            <div class="items price">
+              <p class="old">${{chanl.oldprice}}</p>
+            </div>
+            <div class="items cart">
+              <i class="fa fa-shopping-cart"></i>
+              <button  class="add-to-cart btn btn-default" (click)="onChanl(chanl)" >Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="img-details">
+          <h4 class="images-title">
+            <div class="col text-center" routerLinkActive="active">
+              <a href="/#/detail?id={{chanl.id}}" class="btn btn-outline-neutral btn-round btn-lg nav-link" rel="tooltip">${{chanl.price}}</a>
+            </div>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="section section-dark section-nucleo-icons"style="background-color:rgba(0,0,0,0)">
+  <div class="container" style="background-color:#2b2b2b81;">
+      <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title">CoCo Chanel</h2>
+              <p class="description">1883-1971</p>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-md-12">
+              <h2 class="title">Formation</h2><br/>
+              <p class="description">
+                Gabrielle Bonheur "Coco" Chanel ; 19 August 1883 – 10 January 1971)[2] was a French fashion designer and businesswoman. The founder and namesake of the Chanel brand, she was credited in the post-World War I era with popularizing a sporty, casual chic as the feminine standard of style. 
+              </p><br/>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+              <div class="icons-container">      
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzJkoiVL34gJmJG6xSEdA66CGt2J4wIA3FGlpzrWSjofrO7DBNPbGZzCZrLWcZ7IV0ic&usqp=CAU"width="100%" height="300" alt=" mars" style="object-fit: cover;">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>  
+

@@ -1,0 +1,83 @@
+<div class="wrapper">
+    <div class="page-header section-dark" style="background-image: url(https://i.pinimg.com/564x/92/0e/c3/920ec30105459456b1cd808a34ac3175.jpg)">
+        <div class="filter"></div>
+        <div class="container" style="z-index: 999;">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 mr-auto ml-auto" >
+                  <div class="card card-register" style="background-color:#60606061; backdrop-filter: blur(5px); border: 2px solid rgba(255,255,255,0.1);
+                  box-shadow: 0 0 40px rgba(8,7,16,0.6); max-width: 100%;">
+                      <h3 class="title">Login</h3>
+                      <div class="social-line text-center">
+                          <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
+                              <i class="fa fa-facebook-square"></i>
+                          </a>
+                          <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
+                              <i class="fa fa-google-plus"></i>
+                          </a>
+                          <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
+                              <i class="fa fa-twitter"></i>
+                          </a>
+                      </div>
+                      <form class="register-form" [formGroup]="admin" class="contact-form" (ngSubmit)="onSubmit()"  [action]="url" method="get">
+                        <div>
+                          <label>Email</label>
+                          <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="nc-icon nc-email-85"></i>
+                              </span>
+                              <input id="email" style="border: none;" type="email" class="form-control" placeholder="Email Of Admin" formControlName="email">
+                            </div>
+  
+                          </div>
+                          <div *ngIf="form1.email.invalid && (form1.email.dirty||form1.email.touched)">
+                            <div *ngIf="form1.email.errors">
+                  
+                              <small style="color:red !important;" class="form-text text-muted">Errors Email</small>
+                  
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <label>Password</label>
+                          <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">
+                                  <i class="nc-icon nc-key-25"></i>
+                              </span>
+                              <input id="password" style="border: none;" type="password" class="form-control" placeholder="Admin password" formControlName="password">
+                            </div>
+                          </div>
+                          <div *ngIf="form1.password.invalid && (form1.password.dirty||form1.password.touched)">
+                            <div *ngIf="form1.password.errors">
+                  
+                              <small style="color:red !important;" class="form-text text-muted">Errors Password</small>
+                  
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row" style="text-align: center; padding: 20px">
+                          <div class="col-md-7 mr-auto ml-auto" style="position: relative;">
+                            <button  style="border-color: #ffffff;list-style: none; justify-content: center; font-weight: bold" type="submit;" class="btn btn-outline-success btn-round" [disabled]="!admin.valid">Login</button>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="forgot">
+                          <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+                      </div>
+                      
+                  </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+        <p class=" category-absolute ml-auto mr-auto">Designed and Manufacture by
+          <!-- <h6 class="category category-absolute">Designed and coded by -->
+      
+              <a href="https://www.facebook.com/profile.php?id=100022473285450" target="_blank">
+                  <img src="https://i.pinimg.com/564x/dd/30/4d/dd304d50ce16d952faa6f2507f4ee1ec.jpg"width="30" height="30"  class="creative-tim-logo">
+              </a>
+          </p>
+    </div>
+</div>

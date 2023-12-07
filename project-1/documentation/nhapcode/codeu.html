@@ -1,0 +1,507 @@
+<div class="page-header section-dark" style="background-image: url(https://i.pinimg.com/564x/92/0e/c3/920ec30105459456b1cd808a34ac3175.jpg)">
+    
+</div>
+<!--code background-->
+<div id="typography">
+    <div class="row">
+        <div class="typography-line">
+            <h1>
+                <span class="note">Header 1</span> Thinking in textures
+            </h1>
+        </div>
+        <div class="typography-line">
+            <h2>
+                <span class="note">Header 2</span> Thinking in textures
+            </h2>
+        </div>
+        <div class="typography-line">
+            <h3>
+                <span class="note">Header 3</span> Thinking in textures
+            </h3>
+        </div>
+        <div class="typography-line">
+            <h4>
+                <span class="note">Header 4</span> Thinking in textures
+            </h4>
+        </div>
+        <div class="typography-line">
+            <h5>
+                <span class="note">Header 5</span> Thinking in textures
+            </h5>
+        </div>
+        <div class="typography-line">
+            <h6>
+                <span class="note">Header 6</span> Thinking in textures
+            </h6>
+        </div>
+        <div class="typography-line">
+            <p>
+                <span class="note">Paragraph</span> Thinking in textures
+            </p>
+        </div>
+        <div class="typography-line">
+            <span class="note">Quote</span>
+            <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+        <div class="typography-line">
+            <span class="note">Muted text</span>
+            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        </div>
+        <div class="typography-line">
+            <span class="note">Primary text</span>
+            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </div>
+        <div class="typography-line">
+            <span class="note">Success text</span>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        </div>
+        <div class="typography-line">
+            <span class="note">Info text</span>
+            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+        <div class="typography-line">
+            <span class="note">Warning text</span>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+        </div>
+        <div class="typography-line">
+            <span class="note">Danger text</span>
+            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+        <div class="typography-line">
+            <h2><span class="note">Small tag</span>Header with small subtitle
+                <br/>
+                <small>".small" is a tag for the headers</small>
+            </h2>
+        </div>
+    </div>
+</div>
+<br/>
+<!-- code tyography-->
+<div class="main">
+
+    <app-navigation></app-navigation>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Progress Bar</h3>
+                        <br/>
+                    </div>
+                    <ngb-progressbar type="success" class="mt-0" [value]="25">25</ngb-progressbar><br>
+                    <ngb-progressbar type="info" class="mt-0" [value]="50"><span class="h6 mb-0">Copying file <b>2 of 4</b> ...</span></ngb-progressbar><br>
+                    <ngb-progressbar type="warning" class="mt-0" [value]="75" [striped]="true" [animated]="true"><i>50%</i></ngb-progressbar><br>
+                    <ngb-progressbar type="danger" class="mt-0" [value]="100" [striped]="true">Completed!</ngb-progressbar>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Pagination</h3>
+                        <br/>
+                    </div>
+                    <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+                    <br/>
+                    <ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Navigation Tabs</h3>
+                    </div>
+
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <ngb-tabset [justify]="'center'">
+                                <ngb-tab title="Home">
+                                    <ng-template ngbTabContent>
+                                        <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                    </ng-template>
+                                </ngb-tab>
+                                <ngb-tab title="Profile">
+                                    <ng-template ngbTabContent>
+                                        <p>Here is your profile.</p>
+                                    </ng-template>
+                                </ngb-tab>
+                                <ngb-tab title="Messages">
+                                    <ng-template ngbTabContent>
+                                        <p>Here are your messages.</p>
+                                    </ng-template>
+                                </ngb-tab>
+                            </ngb-tabset>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Labels</h3>
+                    </div>
+                    <span class="label label-default">Default</span>
+                    <span class="label label-primary">Primary</span>
+                    <span class="label label-info">Info</span>
+                    <span class="label label-success">Success</span>
+                    <span class="label label-warning">Warning</span>
+                    <span class="label label-danger">Danger</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-notifications" id="notifications">
+        <div class="container">
+            <div class="tim-title">
+                <h3>Notification</h3>
+            </div>
+        </div>
+        <app-notification></app-notification>
+    </div>
+   
+  <app-typography></app-typography>
+    <div class="section javascript-components">
+        <div class="container">
+            <div class="tim-title">
+                <h2>Angular Native Components</h2>
+            </div>
+            <div class="row" id="modals">
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Modal</h3>
+                    </div>
+                    <app-modal-component></app-modal-component>
+                </div>
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Popovers</h3>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="right"
+                        ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on right">
+                        on right
+                    </button>
+
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="top"
+                        ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on top">
+                        on top
+                    </button>
+
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="left"
+                        ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on left">
+                        on left
+                    </button>
+
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="bottom"
+                        ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on bottom">
+                        on bottom
+                    </button>
+
+                </div>
+                <br/>
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Datepicker</h3>
+                    </div>
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
+                                        <input class="form-control" placeholder="yyyy-mm-dd"
+                                             name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
+                                        <div class="input-group-append">
+                                            <span class="glyphicon glyphicon-calendar input-group-text">
+                                              <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="tim-title">
+                        <h3>Tooltips</h3>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="right" ngbTooltip="Tooltip on right">
+                       on right
+                   </button>
+                   <button type="button" class="btn btn-outline-danger btn-round" placement="left" ngbTooltip="Tooltip on left">
+                      on left
+                   </button>
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="top" ngbTooltip="Tooltip on top">
+                       on top
+                    </button>
+                    <button type="button" class="btn btn-outline-danger btn-round" placement="bottom" ngbTooltip="Tooltip on bottom">
+                       on bottom
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--code còn lại úp lại phải có div ở cuối cùng đóng lại -->
+    <div class="page-header section-dark" style="background-image: url(https://i.pinimg.com/564x/99/e4/46/99e446c802e9e59c2cbcdfe3a5adc71c.jpg)">
+        <div class="section" id="carousel">
+            <div class="container">
+                <div class="tim-title">
+                    <h3> New Product Demo</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <div class="card page-carousel">
+                            <ngb-carousel>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/soroush-karimi.jpg" width="100%" height="300px"alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere else</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                    <div class="carousel-caption">
+                                        <p>Here it is</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/soroush-karimi.jpg" width="100%" height="300px"alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/soroush-karimi.jpg" width="100%" height="300px"alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/soroush-karimi.jpg" width="100%" height="300px"alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere</p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/soroush-karimi.jpg" width="100%" height="300px"alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p>Somewhere</p>
+                                    </div>
+                                </ng-template>
+                            </ngb-carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carosel -->
+    <div class="section section-dark section-nucleo-icons"style="background-image: url(https://i.pinimg.com/564x/09/36/94/0936944e6362f4309bec6590ed79b331.jpg)">
+        <div class="container">
+            <div class="row">
+              
+                
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="title">Nucleo Icons</h2><br/>
+                    <p class="description">
+                        Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The official package contains over 2.100 thin icons which are looking great in combination with Now UI Kit Make sure you check all of them and use those that you like the most.
+                    </p><br/>
+                    <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
+                    <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="title">Nucleo Icons</h2><br/>
+                    <p class="description">
+                      
+                    </p><br/>
+                    <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
+                    <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="title">Nucleo Icons</h2><br/>
+                    <p class="description">
+                      
+                    </p><br/>
+                    <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
+                    <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="title">Nucleo Icons</h2><br/>
+                    <p class="description">
+                      
+                    </p><br/>
+                    <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
+                    <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <!-- bang -->
+    <div class="page-header">
+        <div class="section"style=" background: rgba(0,0,0,0.1);">
+            <div class="container tim-container">
+                <div class="tim-title">
+                    <h3>Producer & The Making Progress</h3>
+                    <br/>
+                </div>
+                
+          
+                    <div id="images">
+                        <div class="container">
+                            <div class="tim-title">
+                                <h3>Producer</h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title"> <a href="https://www.facebook.com/profile.php?id=100022473285450" target="_blank">
+                                    Gucci
+                                    </a></h4>
+                                    <img src="https://i.pinimg.com/564x/96/5f/3d/965f3d2dea30be007523d5f666d91d1b.jpg" class="img-rounded img-responsive" alt="Gucci">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://i.pinimg.com/564x/39/15/74/39157439748adb465f30ec0baed8e1fa.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Guccio Gucci</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Louis-Vuitton</h4>
+                                    <img src="https://i.pinimg.com/564x/92/5f/27/925f27cbb51056964b9a784016a4c041.jpg" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Portrait-Louis-Vuitton.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Louis Vuitton</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Dior</h4>
+                                    <img src="https://i.pinimg.com/564x/90/01/c5/9001c596f585c9085462bafdf6d2aafe.jpg" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://cdn.britannica.com/13/12313-004-03D84561/Christian-Dior-1957.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Chistian Dior</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Chanel</h4>
+                                    <img src="https://i.pinimg.com/564x/46/7c/50/467c507f1b31fa2fd1c0791b3045ae2b.jpg" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzJkoiVL34gJmJG6xSEdA66CGt2J4wIA3FGlpzrWSjofrO7DBNPbGZzCZrLWcZ7IV0ic&usqp=CAU" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>CoCo Chanel</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Balenciaga</h4>
+                                    <img src="https://i.pinimg.com/564x/92/90/58/929058bc07bf333bb7d8aa97bc2603b7.jpg"heigh="50px" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://i.pinimg.com/564x/6f/e3/be/6fe3befe05a7d4185b7df2796b0f8908.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Cristobal Balenciaga</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Dolce & Gabana</h4>
+                                    <img src="https://i.pinimg.com/564x/05/3d/30/053d30d4c131e4073df7bef634bf0ab1.jpg" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://i.pinimg.com/564x/72/a2/2e/72a22edd2e0a72afe9661e0f78c948a4.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Domenico Dolce & Stefano Gabana</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Chrome Heart</h4>
+                                    <img src="https://i.pinimg.com/564x/2c/c3/62/2cc3624ef446f01b4c74d1baff01083c.jpg" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src=" https://i.pinimg.com/564x/e2/f8/cc/e2f8cce3156357b72d08f02a0bf5cf8c.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Richard Stark</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-6 col-md-3">
+                                    <h4 class="images-title">Prada</h4>
+                                    <img src="https://i.pinimg.com/736x/b5/b1/f5/b5b1f5cbaffdadc342377871b56c7cdd.jpg" class="img-rounded img-responsive" alt="">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="https://i.pinimg.com/564x/a8/68/a7/a868a7b5cd387d6cead2cb73c9dff5a3.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Mario Prada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section-dark"style="background-image: url(https://i.pinimg.com/564x/09/36/94/0936944e6362f4309bec6590ed79b331.jpg)">
+                    <div class="container" style="background-color:#2b2b2b81;">
+                        <div class="row">
+                            <div class="col-md-8 ml-auto mr-auto text-center">
+                                <h2 class="title">Completed with examples</h2>
+                                <p class="description">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="section">
+                    <div class="container tim-container">
+                            <div class="row">
+                                <div class="typography-line">
+                                    <h1>
+                                        <span class="note">Discount by VIP card / Menbership card</span> 10%-30%
+                                    </h1>
+                                </div>
+                                <div class="typography-line">
+                                    <h2>
+                                        <span class="note">Discount in BlackFriday</span> 50%
+                                    </h2>
+                                </div>
+                                <div class="typography-line">
+                                    <h3>
+                                        <span class="note">Discount on the 15th of everymoth</span> 10%
+                                    </h3>
+                                </div>
+                                <div class="typography-line">
+                                    <h4>
+                                        <span class="note">Discounts on the same day of the month</span> 20%
+                                    </h4>
+                                </div>
+                                <div class="typography-line">
+                                    <h5>
+                                        <span class="note">Golden Week(Applicable in select countries only)</span> 30%
+                                    </h5>
+                                </div>
+                                <div class="typography-line">
+                                    <h6>
+                                        <span class="note">New products launch with great discount</span>15%
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                
+                    </div>
+                </div>
+                
+            </div>
+        
+        
+    </div>
+    

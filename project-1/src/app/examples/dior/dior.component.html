@@ -1,0 +1,115 @@
+<div class="section section-dark section-nucleo-icons"style="background: rgb(80,80,80);
+background: linear-gradient(326deg, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 55%, rgba(45,45,45,1) 100%); padding-top:12rem;">
+    <div class="container" style=" background-color:#60606061; backdrop-filter: blur(5px); border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6); background-image:url(https://i.pinimg.com/564x/81/d9/ba/81d9ba2ed8118dd17a1e78d038e197ce.jpg); background-repeat:no-repeat;background-size: 100%;background-position: 0% 58%; ">
+        <div class="row"  style="padding-top: 12rem;">
+            <div class="ct takol-md-8 ml-auto mr-auto text-center">
+               
+                <p class="description">Dior forever – perfect cushion</p>
+            </div>
+        </div>
+    
+        <div class="row" style="padding-bottom: 2rem;">
+            <div class="col-xs-8 col-sm-12 col-md-3">
+                <a href="https://www.dior.com/en_vn?gclid=Cj0KCQjwyt-ZBhCNARIsAKH1175i455kB8wJ9MAOa6bdXcP8AZvRuBtiHcy38nXC4FIHe_XmWIVkMTUaAh9NEALw_wcB" target="_blank"> <img src="https://i.pinimg.com/564x/35/ce/2b/35ce2b45efad937afffa6ae7c618ffba.jpg" width="255px" height="143.31px" class="img-rounded img-responsive" alt="Gucci"></a>   
+                <div class="row" style="padding-top: 12px;">
+                  <div class="col-xs-8 col-sm-12 col-md-6 btn-fl" style="display: block;">
+                    <div class=" text-center" routerLinkActive="active">
+                      <a class="btn btn-outline-neutral btn-round nav-link" style="padding:3px 10px;" rel="tooltip" >Flow</a>
+                    </div>
+                </div>    
+                  <div class="col-xs-8 col-sm-12 col-md-6 btn-ct" style="display: block; ">
+                    <div class=" text-center" routerLinkActive="active">
+                      <a class="btn btn-outline-neutral btn-round nav-link" style="padding:3px 10px;" rel="tooltip" >Chat</a>
+                    </div>
+                  </div>    
+                </div>         
+                
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-3">
+                <h4 class="images-title"> 
+                    <p>Product: 10</p>
+                    <p>Watching: 1</p>
+                    <p>Response rate:77%(in a few hours)</p>
+                  
+                </h4>            
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-3">
+                <h4 class="images-title"> 
+                    <p>Order cancellation: 2%</p>
+                    <p>Flowers: 76k</p>
+                    <p>Evaluate: 5/5 (92,3k evaluate)</p>
+                   
+                 </h4>               
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-3">
+                <h4 class="images-title"> 
+                    <p>Joined: 17 months ago</p>
+                    <p>Founder: Christian Dior</p>
+                    <p>Since: 1946</p>
+               </h4> 
+            </div>    
+            
+        </div>
+    </div>
+      <div class="container" style="background-color:#2b2b2b81;" >
+          <div class="tim-title">
+              <h3 style="background-color:#2b2b2b81;text-align: center;">DIOR</h3>
+          </div>
+          <div class="row">            
+              <div class="col-xs-8 col-sm-6 col-md-3" *ngFor="let dior of listDior">
+                  <div class="containe a img-rounded img-responsive" style="background-image: url({{dior.image}})">
+                      <div class="overlay">
+                        <div class = "items"></div>
+                        <div class = "items head">
+                          <p>{{dior.productName}}</p>
+                          <hr>
+                        </div>
+                        <div class = "items price">
+                          <p class="old">${{dior.oldprice}}</p>
+                        </div>
+                        <div class="items cart">
+                          <i class="fa fa-shopping-cart"></i>
+                          <button  class="add-to-cart btn btn-default" (click)="ondior(dior)" >Add</button>
+                      </div>
+                    </div>
+                    </div>
+                  <div class="img-details">
+                      
+                      <h4 class="images-title"> 
+                          <div class="col text-center" routerLinkActive="active">
+                            <a href="/#/detail?id={{dior.id}}" class="btn btn-outline-neutral btn-round btn-lg nav-link" rel="tooltip" >${{dior.price}}</a>
+                          </div>
+                     </h4>
+                  </div>
+              </div>
+      </div>
+      </div>
+  
+<div class="section section-dark section-nucleo-icons"style="background-color:rgba(0,0,0,0)">
+  <div class="container" style="background-color:#2b2b2b81;">
+      <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2 class="title">Christian Dior</h2>
+              <p class="description">1905-1957</p>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 col-md-12">
+              <h2 class="title">Formation</h2><br/>
+              <p class="description">
+                Christian Ernest Dior ; 21 January 1905 – 24 October 1957) was a French fashion designer, best known as the founder of one of the world's top fashion houses, Christian Dior SE, which is now owned by parent company LVMH. His fashion houses are known all around the world, specifically "on five continents in only a decade" (Sauer[2]). He was the second child of a family of seven, born to Maurice Dior and Madeleine Martin, in the town of Granville.
+              </p><br/>
+          </div>
+
+          <div class="col-lg-6 col-md-12">
+              <div class="icons-container">      
+                  <img src="https://cdn.britannica.com/13/12313-004-03D84561/Christian-Dior-1957.jpg"width="100%" height="300" alt=" mars" style="object-fit: cover;">
+              </div>
+          </div>
+      </div>
+  </div>
+</div>  
+

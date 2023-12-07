@@ -1,0 +1,118 @@
+<div class="section section-dark section-nucleo-icons"style="background: rgb(80,80,80);
+background: linear-gradient(326deg, rgba(80,80,80,1) 0%, rgba(0,0,0,1) 55%, rgba(45,45,45,1) 100%); padding-top:12rem;">
+  <div class="container"style=" background-color:#60606061; backdrop-filter: blur(5px); border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6); background-image:url(https://i.pinimg.com/564x/45/71/db/4571dbaca8da0475e749d9ee1856a628.jpg); background-repeat:no-repeat;background-size: 100%;background-position: 0% 58%; ">
+      <div class="row" style="padding-top: 12rem;">
+          <div class="ct takol-md-8 ml-auto mr-auto text-center">
+              
+              <p class="description">A world of elegance inspiration, innovation</p>
+          </div>
+      </div>
+  
+      <div class="row" style="padding-bottom: 2rem;">
+          <div class="col-xs-8 col-sm-12 col-md-3">
+            <a href="https://www.louisvuitton.com/" target="_blank"> <img
+              src="https://logotaglines.com/wp-content/uploads/2021/12/Louis-Vuitton-Logo-Tagline-Slogan-Founder-Owner-480x480.jpg" width="255px"
+              height="143.31px" class="img-rounded img-responsive" alt="Gucci"></a>   
+              <div class="row" style="padding-top: 12px;">
+                <div class="col-xs-8 col-sm-12 col-md-6 btn-fl" style="display: block;">
+                  <div class=" text-center" routerLinkActive="active">
+                    <a class="btn btn-outline-neutral btn-round nav-link" style="padding:3px 10px;" rel="tooltip" >Flow</a>
+                  </div>
+                </div>    
+                <div class="col-xs-8 col-sm-12 col-md-6 btn-ct" style="display: block; ">
+                  <div class=" text-center" routerLinkActive="active">
+                    <a class="btn btn-outline-neutral btn-round nav-link" style="padding:3px 10px;" rel="tooltip" >Chat</a>
+                  </div>
+                </div>    
+              </div>         
+              
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-3">
+              <h4 class="images-title"> 
+                <p>Product: 10</p>
+                <p>Watching: 0</p>
+                <p>Response rate: 85%(in a few hours)</p>
+                      
+              </h4>            
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-3">
+              <h4 class="images-title"> 
+                <p>Order cancellation: 0,2%</p>
+                <p>Flowers: 56,7k</p>
+                <p>Evaluate: 5/5 (78,3k evaluate)</p>
+                 
+               </h4>               
+          </div>
+          <div class="col-xs-8 col-sm-8 col-md-3">
+              <h4 class="images-title"> 
+                <p>Joined: 25 months ago</p>
+                <p>Founder: Louis Vuiton</p>
+                <p>Since: 1854</p>
+                  </h4> 
+          </div>    
+          
+      </div>
+  </div>
+  <div class="container" style="background-color:#2b2b2b81;">
+    <div class="tim-title">
+      <h3 style="background-color:#2b2b2b81;text-align: center;">Louis Vuiton</h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-sm-6 col-md-3" *ngFor="let lv of listLv">
+        <div class="containe a img-rounded img-responsive"
+          style="background-image: url({{lv.image}})">
+          <div class="overlay">
+            <div class="items"></div>
+            <div class="items head">
+              <p>{{lv.productName}}</p>
+              <hr>
+            </div>
+            <div class="items price">
+              <p class="old">${{lv.oldprice}}</p>
+            </div>
+            <div class="items cart">
+              <i class="fa fa-shopping-cart"></i>
+              <button  class="add-to-cart btn btn-default" (click)="onLV(lv)" >Add</button>
+            </div>
+          </div>
+        </div>
+        <div class="img-details">
+          <h4 class="images-title">
+            <div class="col text-center" routerLinkActive="active">
+              <a href="/#/detail?id={{lv.id}}" class="btn btn-outline-neutral btn-round btn-lg nav-link" rel="tooltip">${{lv.price}}</a>
+            </div>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section-dark section-nucleo-icons" style="background-color:rgba(0,0,0,0)">
+    <div class="container" style="background-color:#2b2b2b81;">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">Louis Vuitton</h2>
+          <p class="description">1821-1892</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <h2 class="title">Formation</h2><br />
+          <p class="description">
+            Louis Vuitton; 4 August 1821 – 27 February 1892)[1] was a French fashion designer and businessman. He was
+            the founder of the Louis Vuitton brand of leather goods now owned by LVMH. Prior to this, he had been
+            appointed as trunk-maker to Empress Eugénie de Montijo, wife of Napoleon.
+          </p><br />
+        </div>
+
+        <div class="col-lg-6 col-md-12">
+          <div class="icons-container">
+            <img src="https://i.pinimg.com/564x/7b/e7/70/7be7707f2bf788ff6f02b867ab4912be.jpg" width="100%" height="300"
+              alt=" mars" style="object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

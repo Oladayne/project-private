@@ -1,0 +1,137 @@
+<div class="Blcak-bg" >
+  <div class="container" style="padding-top: 10rem;">
+   
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="category-block">
+          <div class="product-detail"  style="background-color:#69696981;text-align: center;">
+             <h2 class="collapse-title"  style="background-color:#62626281;font-size:30px; margin: 0px;">Brands</h2>
+            <div class="collapse-body">
+               <ul>
+                <li><a [routerLink]="['/gucci']" class="active">Gucci</a></li>
+                <li>  <a [routerLink]="['/lv']" class="active">Louis Vuitton</a></li>
+                <li>  <a [routerLink]="['/dior']" class="active">Dior</a></li>
+                <li> <a [routerLink]="['/chanl']" class="active">Chanel</a></li>
+                <li>  <a [routerLink]="['/balenciaga']" class="active">Balenciaga</a></li>
+                <li>  <a [routerLink]="['/dolcegabana']" class="active">Dolce & Gabana</a></li>
+                <li> <a [routerLink]="['/chromehearts']" class="active">Chrome Hearts</a></li>
+                <li><a [routerLink]="['/prada']" class="active">Prada</a></li>
+               </ul>
+                </div>
+             
+          </div>
+          
+        </div>
+        <div class="category-block">
+          <div class="product-detail" style="background-color:#5e5e5e81;">
+            <h2 class="category-title" style="background-color:#61616181;font-size:30px;text-align: center;">Evaluate</h2>
+            <ul style="padding-left: .5rem; " (ngSubmit)="kicktovalue()">
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                <label for="styled-checkbox-1" >
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+              </label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                <label for="styled-checkbox-2">
+                  
+             <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-fill"></i>
+             <i class="bi bi-star-fill"></i>
+              </label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+                <label for="styled-checkbox-3">
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+                </label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">
+                <label for="styled-checkbox-4">
+               <i class="bi bi-star-fill"></i>
+               <i class="bi bi-star-fill"></i>
+                </label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-5" type="checkbox" value="value1">
+                <label for="styled-checkbox-5">
+               <i class="bi bi-star-fill"></i>
+                </label>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="category-block">
+          <div class="product-detail" style="background-color:#5e5e5e81; ">
+            <h2 class="category-title" style="background-color:5e5e5e81;font-size:30px;text-align: center;">Price</h2>
+            <ul style="padding-left: .5rem; ">
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-6" type="checkbox" value="value1">
+                <label for="styled-checkbox-6">1000$</label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-7" type="checkbox" value="value1">
+                <label for="styled-checkbox-7">800$</label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-8" type="checkbox" value="value1">
+                <label for="styled-checkbox-8">600$</label>
+              </li>
+              <li>
+                <input class="custom-checkbox" id="styled-checkbox-9" type="checkbox" value="value1">
+                <label for="styled-checkbox-9">400$</label>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="container" style="background-color:#56565681; padding-top: 1.5rem;">
+            
+            <div class="row" >            
+                <div class="col-xs-8 col-sm-6 col-md-3" *ngFor="let search of listSearch">
+                    <div class="containe a img-rounded img-responsive" style="background-image: url({{search.image}})">
+                        <div class="overlay">
+                          <div class = "items"></div>
+                          <div class = "items head">
+                            <p>{{search.productName}}</p>
+                            <hr>
+                          </div>
+                          <div class = "items price">
+                            <p class="old">${{search.oldprice}}</p>
+                          </div>
+                          <div class="items cart">
+                            <i class="fa fa-shopping-cart"></i>
+                            <button  class="add-to-cart btn btn-default" (click)="onSearch(search)" >Add</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="img-details">                        
+                      <h4 class="images-title"> 
+                        <div class="col text-center" routerLinkActive="active">
+                          <a href="/#/detail?id={{search.id}}" class="btn btn-outline-neutral btn-round btn-lg nav-link" rel="tooltip" >${{search.price}}</a>
+                        </div>
+                      </h4>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
